@@ -44,7 +44,7 @@ const AuthContext = React.createContext<{
 }>({ user: null, loginUser: async () => {}, logoutUser: () => {} });
 
 // --- Protected Route Wrapper
-const ProtectedRoute = ({ children, requiredRole }: { children?: React.ReactNode, requiredRole?: UserRole }) => {
+const ProtectedRoute = ({ children, requiredRole }: { children: React.ReactElement, requiredRole?: UserRole }) => {
   const { user } = React.useContext(AuthContext);
   
   if (!user) return <Navigate to="/login" replace />;
@@ -53,7 +53,7 @@ const ProtectedRoute = ({ children, requiredRole }: { children?: React.ReactNode
      return <Navigate to="/dashboard" replace />;
   }
 
-  return <>{children}</>;
+  return children;
 };
 
 // --- Components Pages
