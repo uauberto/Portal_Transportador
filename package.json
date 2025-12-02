@@ -16,7 +16,8 @@
     "jszip": "^3.10.1",
     "react-dom": "^19.2.0",
     "jspdf": "^2.5.1",
-    "jsbarcode": "^3.12.1"
+    "jsbarcode": "^3.12.1",
+    "dotenv": "^17.2.3"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
