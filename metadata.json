@@ -1,0 +1,5 @@
+{
+  "name": "NFe-Logistica-Secure",
+  "description": "A secure web portal for logistics carriers to manage, view, and bulk download NF-e XML files. Features PDF generation.",
+  "requestFramePermissions": []
+}
